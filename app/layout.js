@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <ConfigProvider
             theme={{
               token: {
-                colorPrimary: "#000",
+                colorPrimary: "#39C261",
               },
               components: {
                 Button: {

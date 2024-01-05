@@ -1,8 +1,10 @@
+"use client"
 import { BellOutlined, SearchOutlined, UserSwitchOutlined } from '@ant-design/icons'
 import { Avatar, Badge, Button, Divider, Flex, Input } from 'antd'
+import { Header } from 'antd/es/layout/layout'
 import React from 'react'
 
-const Header = () => {
+const HeaderLayoutComponent = () => {
   return (
     <Header
                   style={{
@@ -58,10 +60,10 @@ const Header = () => {
                       align="center"
                       style={{ height: "100%" }}
                     >
-                      <p style={{ marginBottom: "-22px", padding: 0 }}>
+                      <p style={{ marginBottom: "-22px", padding: 0,color:"#061425" }}>
                         John Doe
                       </p>
-                      <p style={{ marginTop: "-22px", padding: 0 }}>
+                      <p style={{ marginTop: "-22px", padding: 0,fontWeight:"lighter" }}>
                         Super Admin
                       </p>
                     </Flex>
@@ -70,4 +72,4 @@ const Header = () => {
   )
 }
 
-export  {Header}
+export default HeaderLayoutComponent

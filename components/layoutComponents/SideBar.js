@@ -72,7 +72,7 @@ const getItems = (label, key, icon, children, type) => {
         ),
         getItems(
           "Logout",
-          "support-grp-item-1",
+          "support-grp-item-2",
           <LogoutOutlined style={{ fontSize: "18px" }} />
         ),
       ],
@@ -81,7 +81,7 @@ const getItems = (label, key, icon, children, type) => {
   ];
 const SideBar = () => {
   return (
-    <Sider width={"20%"} theme="light">
+    <Sider width={"20%"} theme="light"  style={{fontWeight:"bold",color:"#8697AB"}}>
     <Flex
       justify="flex-start"
       align="center"
@@ -99,10 +99,12 @@ const SideBar = () => {
           flexDirection: "column",
           gap: "24px",
         }}
+        defaultOpenKeys={["menu-grp-item-3"]}
+        defaultSelectedKeys={["menu-grp-item-3-sub-3"]}
       />
     </Flex>
   </Sider>
   )
 }
 
-export  {SideBar}
+export default SideBar
